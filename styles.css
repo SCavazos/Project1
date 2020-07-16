@@ -21,9 +21,9 @@ h2 {
     text-align: center;
 }
 
-li {
+/* li {
     list-style-type: none;
-}
+} */
 
 p {
     text-align: center;
@@ -49,10 +49,10 @@ footer {
     margin-top: 0;
 }
 
-#main-nav {
+/* #main-nav {
     display: flex;
     flex-direction: column;
-}
+} */
 
 #welcome,
 #learn {
@@ -70,16 +70,17 @@ footer {
 
 /*---------- Class Selectors ---------- */
 
-.item {
+/* .item {
     flex-grow: 1;
-}
+} */
 
 
 /*---------- Pseduo-Classes ---------- */
 
-a:link {
+/* a:link {
     text-decoration: none;
-}
+} */
+
 
 /*---------- Media Queries ---------- */
 
@@ -91,13 +92,13 @@ a:link {
         flex-direction: column;
     }
 
-    #main-nav {
+    /* #main-nav {
         flex-direction: row;
     }
 
     .item {
         flex-grow: 1;
-    }
+    }  */
 
 }
 
