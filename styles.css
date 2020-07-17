@@ -54,6 +54,10 @@ footer {
     flex-direction: column;
 } */
 
+#dropdown {
+    background: #c0c0c0;   
+}
+
 #welcome,
 #learn {
     padding: 30px 30px;
@@ -92,15 +96,16 @@ footer {
         flex-direction: column;
     }
 
-    /* #main-nav {
-        flex-direction: row;
+     #tablet-nav {
+         display: flex;
+        flex-direction: column;
     }
 
     .item {
         flex-grow: 1;
-    }  */
+    }  
 
-}
+} 
 
 @media (min-width: 1025px) {
 
