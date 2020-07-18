@@ -2,6 +2,8 @@
 
 header,
 footer,
+h1,
+h2,
 #welcome,
 #learn,
 #main-header,
@@ -106,9 +108,10 @@ footer {
 
 /*---------- Pseduo-Classes ---------- */
 
-/* a:link {
+a:link {
     text-decoration: none;
-} */
+    color: inherit;
+}
 
 
 /*---------- Media Queries ---------- */
