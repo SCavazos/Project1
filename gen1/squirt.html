@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Squirtle</title>
+        <link rel="stylesheet" href="../styles.css">
     </head>
     <body>
         <header>
@@ -11,6 +12,17 @@
         </header>
         <main>
             <a href="http://pokemondb.net/pokedex/squirtle"><img src="https://img.pokemondb.net/sprites/black-white/shiny/squirtle.png" alt="Squirtle"></a>
+
+            <label for="pokemon_seen">How many Squirtle have you seen?</label><br>
+            <input type="text" id="pokemon_seen" name="trainer_squirt_seen"><br>
+
+            <label for="pokemon_shiny">How many Shiny Squirtle have you encountered?</label><br>
+            <input type="text" id="pokemon_shiny" name="trainer_squirt_shiny"><br>
+
+            <button id="pokemon_rate">Submit</button>
+
+            <span id="result"></span>
         </main>
+        <script src="../shiny-rates.js"></script>
     </body>
 </html>

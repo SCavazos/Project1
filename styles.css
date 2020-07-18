@@ -32,7 +32,9 @@ p {
 
 footer {
     background-color: red;
+    margin-bottom: 0;
     margin-top: 100px;
+    display: block;
     position: sticky;
     
 }
@@ -55,7 +57,7 @@ footer {
 } */
 
 #dropdown {
-    background: #c0c0c0;   
+    background: #c0c0c0;
 }
 
 #welcome,
@@ -78,6 +80,10 @@ footer {
     flex-grow: 1;
 } */
 
+.wrapper {
+    min-height: calc(100vh - 47px);
+}
+
 
 /*---------- Pseduo-Classes ---------- */
 
@@ -88,25 +94,43 @@ footer {
 
 /*---------- Media Queries ---------- */
 
-@media (min-width: 780px) {
+@media (min-width: 768px) {
 
     #welcome,
     #learn {
         display: flex;
         flex-direction: column;
+        max-width: 50%;
+        margin-left: auto;
     }
 
-     #tablet-nav {
-         display: flex;
-        flex-direction: column;
+    /* #main-nav {
+        flex-direction: row;
     }
-
     .item {
         flex-grow: 1;
-    }  
+    }  */
 
-} 
+}
+
+    footer {
+        margin-top: 0;
+    }
 
 @media (min-width: 1025px) {
+
+    #welcome,
+    #learn {
+        max-width: 30%;
+        max-height: 10%;
+        margin-top: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #landscape {
+        display: flex;
+        flex-direction: row;
+    }
 
 }
