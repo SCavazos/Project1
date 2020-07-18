@@ -74,6 +74,7 @@ footer {
     margin-top: 50px;
 }
 
+
 /*---------- Class Selectors ---------- */
 
 /* .item {
@@ -84,6 +85,23 @@ footer {
     min-height: calc(100vh - 47px);
 }
 
+.main-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+}
+
+.main-item {
+    align-self: flex-start;
+}
+
+.result {
+    display: block;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 10%;
+    text-align: center;
+}
 
 /*---------- Pseduo-Classes ---------- */
 

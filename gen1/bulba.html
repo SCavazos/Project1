@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" href="../styles.css">
     </head>
+    
     <body>
         
         <header>
@@ -39,18 +40,23 @@
         </header>
 
         <main> 
-            <a id="bulba_sprite" href="http://pokemondb.net/pokedex/bulbasaur"><img src="https://img.pokemondb.net/sprites/black-white/shiny/bulbasaur.png" alt="Bulbasaur" class="center"></a>
+            <div class="main-content">
+              <a id="bulba_sprite" href="http://pokemondb.net/pokedex/bulbasaur"><img src="https://img.pokemondb.net/sprites/black-white/shiny/bulbasaur.png" alt="Bulbasaur" class="main-item"></a>
 
-                <label>How many Bulbasaur have you seen?</label><br>
-                <input type="text" id="pokemon_seen" name="trainer_bulba_seen"><br>
+              <label class="main-item">How many Bulbasaur have you seen?</label><br>
+              <input type="text" id="pokemon_seen" name="trainer_bulba_seen" class="main-item"><br>
 
-                <label for="pokemon_shiny">How many Shiny Bulbasaur have you encountered?</label><br>
-                <input type="text" id="pokemon_shiny" name="trainer_bulba_shiny"><br>
+              <label for="pokemon_shiny" class="main-item">How many Shiny Bulbasaur have you encountered?</label><br>
+              <input type="text" id="pokemon_shiny" name="trainer_bulba_shiny" class="main-item"><br>
 
-                <button id="pokemon_rate">Submit</button>
-
-            <span id="result"></span>
+              <button id="pokemon_rate" class="main-item">Submit</button>
+            </div>
+            <span id="result" class="result"></span>
         </main>
+
+        <footer>
+          <p>Filler text to actually give me a footer of sorts </p>
+        </footer>
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
