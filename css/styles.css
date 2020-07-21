@@ -1,13 +1,9 @@
 /*---------- Temporary ---------- */
 
-header,
-footer,
-h1,
-h2,
+
 #welcome,
 #learn,
-#main-header,
-#tagline {
+header {
     border: red 2px solid;
 }
 
@@ -33,10 +29,24 @@ p {
     font-size: large;
 }
 
+form {
+    border: black 2px solid;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input,
+label {
+    width: 100%;
+    text-align: center;
+}
+
 footer {
     background-color: red;
     margin-bottom: 0;
-    margin-top: 100px;
+    margin-top: 50px;
+    padding: 10px;
     display: block;
     position: sticky;
     
@@ -46,18 +56,14 @@ footer {
 
 #main-header,
 #tagline {
-    text-align: center;
     margin-bottom: 0;
 }
 
 #tagline {
+    text-align: center;
     margin-top: 0;
 }
 
-/* #main-nav {
-    display: flex;
-    flex-direction: column;
-} */
 
 #dropdown {
     background: #c0c0c0;
@@ -70,6 +76,7 @@ footer {
 
 #welcome {
     background-color: #2a75bb;
+    margin-top: 50px;
 }
 
 #learn {
@@ -77,25 +84,19 @@ footer {
     margin-top: 50px;
 }
 
+#eeveelutions {
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /*---------- Class Selectors ---------- */
 
-/* .item {
-    flex-grow: 1;
-} */
 
 .wrapper {
-    min-height: calc(100vh - 47px);
-}
-
-.main-content {
-    display: flex;
-    flex-direction: column;
-    padding-left: 10%;
-}
-
-.main-item {
-    align-self: flex-start;
+    min-height: calc(100vh - 63px);
 }
 
 .result {
@@ -106,9 +107,13 @@ footer {
     text-align: center;
 }
 
+.sign-in {
+    text-align: center;
+}
+
 /*---------- Pseduo-Classes ---------- */
 
-a:link {
+a:link {                        /*need to work on this*/
     text-decoration: none;
     color: inherit;
 }
@@ -122,22 +127,33 @@ a:link {
     #learn {
         display: flex;
         flex-direction: column;
-        max-width: 50%;
+        max-width: 60%;
         margin-left: auto;
+        margin-right: auto;
     }
 
-    /* #main-nav {
-        flex-direction: row;
+    #main-nav {
+        display: flex;
+        justify-content: center;
     }
-    .item {
-        flex-grow: 1;
-    }  */
+    #navigation {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    input,
+    label {
+        width: 40%;
+        margin-left: 30%;
+    }
+
+     footer {
+        margin-top: 0;
+    } 
 
 }
 
-    footer {
-        margin-top: 0;
-    }
 
 @media (min-width: 1025px) {
 
@@ -145,9 +161,6 @@ a:link {
     #learn {
         max-width: 30%;
         max-height: 10%;
-        margin-top: 5%;
-        margin-left: 10%;
-        margin-right: 10%;
     }
 
     #landscape {
