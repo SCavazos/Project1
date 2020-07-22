@@ -1,11 +1,3 @@
-/*---------- Temporary ---------- */
-
-
-#welcome,
-#learn,
-header {
-    border: red 2px solid;
-}
 
 
 /*---------- Element Selectors ---------- */
@@ -20,18 +12,25 @@ h2 {
     padding: 20px;
 }
 
-/* li {
-    list-style-type: none;
-} */
+nav {
+    border-bottom: 2px red solid;
+}
 
 p {
     text-align: center;
     font-size: large;
 }
 
+a {                       
+    text-decoration: none;
+    color: black;
+}
+
+
 form {
     border: black 2px solid;
     width: 70%;
+    margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -62,6 +61,7 @@ footer {
 #tagline {
     text-align: center;
     margin-top: 0;
+    border-bottom: 2px red solid;
 }
 
 
@@ -69,9 +69,15 @@ footer {
     background: #c0c0c0;
 }
 
+#region-nav {
+    color: black;
+    padding-top: 0;
+}
+
 #welcome,
 #learn {
     padding: 30px 30px;
+    border: 2px red solid;
 }
 
 #welcome {
@@ -111,11 +117,10 @@ footer {
     text-align: center;
 }
 
-/*---------- Pseduo-Classes ---------- */
-
-a:link {                        /*need to work on this*/
-    text-decoration: none;
-    color: inherit;
+.button {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
@@ -142,15 +147,19 @@ a:link {                        /*need to work on this*/
         justify-content: space-evenly;
     }
 
+    #eeveelutions {
+        display: none;
+    }
+
     input,
     label {
         width: 40%;
         margin-left: 30%;
     }
 
-     footer {
+     /* footer {
         margin-top: 0;
-    } 
+    }  */
 
 }
 
@@ -161,11 +170,19 @@ a:link {                        /*need to work on this*/
     #learn {
         max-width: 30%;
         max-height: 10%;
-    }
+    } 
 
     #landscape {
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #eeveelutions {
+        margin-top: 50px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 }

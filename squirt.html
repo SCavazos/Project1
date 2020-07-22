@@ -4,7 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Squirtle</title>
+<!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<!-- My CSS -->
         <link rel="stylesheet" href="css/styles.css">
     </head>
 
@@ -12,6 +14,7 @@
         <div class="wrapper"> 
             <header>
                 <h1>Squirtle</h1>
+<!-- Navigation Bar -->
                 <nav class="navbar navbar-expand-md navbar-light">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -37,19 +40,20 @@
                     </div>
                 </nav>
             </header>
-
+<!-- Content -->
             <main>
-                <div class="main-content">
-                    <a href="http://pokemondb.net/pokedex/squirtle"><img src="https://img.pokemondb.net/sprites/black-white/shiny/squirtle.png" alt="Squirtle" class="main-item"></a>
+                <a href="http://pokemondb.net/pokedex/squirtle"><img src="https://img.pokemondb.net/sprites/black-white/shiny/squirtle.png" alt="Squirtle"></a><br>
 
-                    <label for="pokemon_seen" class="main-item">How many Squirtle have you seen?</label><br>
-                    <input type="text" id="pokemon_seen" name="trainer_char_seen" class="main-item"><br>
+                <label>How many Squirtle have you seen?</label><br>
+                <input type="text" id="pokemon_seen" name="trainer_char_seen"><br>
 
-                    <label for="pokemon_shiny" class="main-item">How many Shiny Squirtle have you encountered?</label><br>
-                    <input type="text" id="pokemon_shiny" name="trainer_char_shiny" class="main-item"><br>
+                <label for="pokemon_shiny">How many Shiny Squirtle have you encountered?</label><br>
+                <input type="text" id="pokemon_shiny" name="trainer_char_shiny"><br>
 
-                    <button id="pokemon_rate" class="main-item">Submit</button>
+                <div class="button">
+                    <button id="pokemon_rate">Submit</button>
                 </div>
+
                 <span id="result" class="result"></span>
             </main>
         </div>
@@ -57,10 +61,11 @@
         <footer>
             <p>Filler text to actually give me a footer of sorts </p>
         </footer>
-
+<!-- Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<!-- My JS -->
         <script src="js/shiny-rates.js"></script>
     </body>
 </html>
