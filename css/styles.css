@@ -155,7 +155,7 @@ footer {
     }
 
     #eeveelutions {
-        display: none;
+        max-width: 80%;
     }
 
 
@@ -180,11 +180,11 @@ footer {
         justify-content: space-around;
     }
 
-    #eeveelutions {
+    /* #eeveelutions {
         margin-top: 50px;
         display: block;
         margin-left: auto;
         margin-right: auto;
-    }
+    } */
 
 }
