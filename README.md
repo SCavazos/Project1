@@ -7,3 +7,5 @@ The features I'm currently showcasing are as follows:<br>
 2. The use of media queries and Flexbox to switch my one-column, mobile layout to a three column desktop layout<br>
 3. Two forms that each take in at least two fields of information and validates input<br>
 4. My JS function takes in two values from the user and upon clicking the "Get My Shiny Rate" button, performs a math operation, and displays the result on the page<br>
+<br>
+One thing to note: My desktop-sized navigation bar displays best when using Chrome or Firefox. 
