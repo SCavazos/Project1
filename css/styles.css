@@ -101,6 +101,12 @@ footer {
     margin-right: auto;
 }
 
+#missing_requirement {
+    text-align: center;
+    color:red;
+    font-weight: bold;
+}
+
 
 /*---------- Class Selectors ---------- */
 
