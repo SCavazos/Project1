@@ -17,7 +17,9 @@ function validatePassword() {
         document.getElementById("missing_requirement").innerHTML = (`Your password must contain a number.`)
     } else if (!hasCharacter) {
         document.getElementById("missing_requirement").innerHTML = (`Your password must contain a special character.`)
-    } else;
+    } else {
+        document.getElementById("missing_requirement").innerHTML = (''); 
+    };
 };
 const submit = document.getElementById("submit");
 submit.addEventListener("click", validatePassword);
