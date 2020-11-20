@@ -14,7 +14,7 @@ let pokemonList = "";
 fetch('https://pokeapi.co/api/v2/pokedex/kanto')
   .then(response => response.json())
   .then(data => {
-    // console.log(data);
+    console.log(data);
 
     data.pokemon_entries.forEach(pokemon => { 
         const name = pokemon.pokemon_species.name;

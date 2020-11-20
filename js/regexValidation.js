@@ -13,7 +13,7 @@ function formatPhone(text) {
     return text.replace(regex, "($1) $2-$3");
 }
 
-// ----- Store Input ----- //
+// ----- Store Input (password) ----- //
 
 function validatePassword() {
     const passwordInput = document.getElementById("password").value;

@@ -1,12 +1,15 @@
 # Project1
-My first project: GO Tracker.<br>
-GO Tracker is a place where Pokemon GO Trainers can log in and check their personal shiny rates. The state that my project is currently in, is for single use only. The long-term goal for this project is for Trainers to be able to log in and track their perosnal shiny rates over time, per Pokemon species.<br>
-Navigate to the Kanto Region under the "Regions" tab, click on the Pokemon you would like to track and plug in your numbers.<br>
+My JS project: building off of my original GO Tracker.<br>
+GO Tracker is a place where Pokemon GO Trainers can log in and check their personal shiny rates. The entirety of GO Tracker is still a work-in-progress. The long-term goal for this project is for Trainers to be able to log in and track their perosnal shiny rates over time, per pokemon species.<br>
+I've updated GO Tracker to include the beginnings of a Pokedex.<br>
 <br>
-The features I'm currently showcasing are as follows:<br>
-1. A navigation menu that collapses into a responsive, mobile-friendly menu through the use of Bootstrap from a CDN<br>
-2. The use of media queries and Flexbox to switch my one-column, mobile layout to a three column desktop layout<br>
-3. Two forms that each take in at least two fields of information and validates input<br>
-4. My JS function takes in two values from the user and upon clicking the "Get My Shiny Rate" button, performs a math operation, and displays the result on the page<br>
+<h2>How to view all of my features:</h2><br>
+* Navigate to the Kanto page from the Regions tab. A fetch request to PokeAPI provides an array of all the pokemon names which is used to populate all of the sprites.<br>
+* Clicking on any pokemon in this array will display select info for that pokemon's "beginner" Pokedex page, along with the shiny version of that pokemon.<br>
+* Heading over to the Sign Up tab, regex is used to ensure that a Trainer's phone number is displayed in the correct format.<br>
+* Regex is also used to validate that a Trainer's password meets all of the password requirements.<br>  
 <br>
-One thing to note: My desktop-sized navigation bar displays best when using Chrome or Firefox. 
+<h2>Things to note:<h2><br>
+There are no special requirements needed to run my project.<br>
+The Sign Up page is not fully functional- for now it serves to show the use of regex.<br>
+My desktop-sized navigation bar displays best when using Chrome or Firefox.<br>
