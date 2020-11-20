@@ -107,6 +107,16 @@ footer {
     font-weight: bold;
 }
 
+#pokemon_info,
+#pokemon_flavor_text,
+#sprite {
+    padding: 20px;
+}
+
+#pokemon_flavor_text {
+    margin-bottom: 5%;
+}
+
 
 /*---------- Class Selectors ---------- */
 
@@ -186,5 +196,11 @@ footer {
         flex-direction: row;
         justify-content: space-around;
     }
+
+    #pokemon_info,
+    #pokemon_flavor_text,
+    #sprite {
+    margin-left: 20%;
+}
 
 }

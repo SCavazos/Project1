@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bulbasuar</title>
+        <title>Pokedex Entry</title>
 <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <!-- My CSS -->
@@ -13,7 +13,7 @@
     <body>
       <div class="wrapper">  
         <header>
-            <h1>Bulbasuar</h1>
+            <h1>Pokemon Info</h1>
 <!-- Navigation Bar -->
             <nav class="navbar navbar-expand-md navbar-light">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,18 +42,22 @@
         </header>
 <!-- Content -->
         <main> 
-            <a id="bulba_sprite" href="http://pokemondb.net/pokedex/bulbasaur"><img src="https://img.pokemondb.net/sprites/black-white/shiny/bulbasaur.png" alt="Bulbasaur"></a><br>
+            <div id="sprite"></div>
 
-            <label>How many Bulbasaur have you seen?</label><br>
+            <div id="pokemon_info"></div>
+            <div id="pokemon_flavor_text"></div>
+
+            <label>How many of this species have you seen?</label><br>
             <input type="text" id="pokemon_seen" name="trainer_bulba_seen"><br>
 
-            <label for="pokemon_shiny">How many Shiny Bulbasaur have you encountered?</label><br>
+            <label for="pokemon_shiny">How many shiny of this species have you encountered?</label><br>
             <input type="text" id="pokemon_shiny" name="trainer_bulba_shiny"><br>
 
             <div class="button">
               <button id="pokemon_rate">Submit</button>
             </div>
             <span id="result" class="result"></span>
+
         </main>
       </div>
 
@@ -66,5 +70,6 @@
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <!-- My JS -->
       <script src="js/shiny-rates.js"></script>   
+      <script src="js/shellPage.js"></script>
     </body>
 </html>
