@@ -1,8 +1,4 @@
-//------------ endpoint for pokedex entry info -----
-// https://pokeapi.co/api/v2/pokemon/${name}
-// need id, name, height, weight, type
-// https://pokeapi.co/api/v2/pokemon-species/${name}
-// need flavor text from here 
+// ----- Parse URL ----- //
 
 let queryString = window.location.search;
 let urlParams = new URLSearchParams(queryString);
@@ -10,6 +6,7 @@ let pokemonName = urlParams.get('name');
 
 let pokemonInfo = "";
 
+// ----- Fetch Requests to PokeAPI ----- //
 
 fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
   .then(response => response.json())
@@ -38,6 +35,8 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
 
 
         });
+        
+// ----- Add content to page ----- //
 
         document.getElementById("sprite").innerHTML = `<a href="http://pokemondb.net/pokedex/${data.name}"><img src="https://img.pokemondb.net/sprites/black-white/shiny/${data.name}.png" alt="${data.name}"></img></a>`;
 

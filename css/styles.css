@@ -117,6 +117,9 @@ footer {
     margin-bottom: 5%;
 }
 
+#success {
+    color: green;
+}
 
 /*---------- Class Selectors ---------- */
 
