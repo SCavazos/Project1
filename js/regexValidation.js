@@ -24,17 +24,11 @@ function validatePassword() {
     const hasNumber = /[0-9]/.test(passwordInput);
     const hasCharacter = /[!@#$%^&*(),.?":{}|<>]/.test(passwordInput);
 
-// ----- Displays message if requirements are missing or if they are met ----- //    
+// ----- Displays message if requirements are or not met ----- //    
 
-    if (passwordInput.length != 8) {
-        document.getElementById("missing_requirement").innerHTML = (`Your password must be 8 characters long.`)
-    } else if (!hasUpperCase) {
-        document.getElementById("missing_requirement").innerHTML = (`Your password must contain an upper case letter.`)
-    } else if (!hasNumber) {
-        document.getElementById("missing_requirement").innerHTML = (`Your password must contain a number.`)
-    } else if (!hasCharacter) {
-        document.getElementById("missing_requirement").innerHTML = (`Your password must contain a special character.`)
-    } else {
+    if (!hasUpperCase || !hasNumber || !hasCharacter || passwordInput.length <=7 ) {
+        document.getElementById("missing_requirement").innerHTML = (`You have included an upper case letter: ${hasUpperCase}.<br> You have included a number: ${hasNumber}.<br> You have included a special character: ${hasCharacter}.<br> Your password is incomplete. You only have ${passwordInput.length} characters.`)
+     } else {
         document.getElementById("missing_requirement").innerHTML = `<div id="success">Thanks for signing up!</div>`; 
     };
 };
